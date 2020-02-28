@@ -1,0 +1,20 @@
+body {
+  background-color: #34495e;
+}
+.js-title {
+  display: flex;
+  justify-content: center;
+  color: #bdc3c7;
+  background-color: hotpink;
+  width: 200px;
+  height: 50px;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
