@@ -1,6 +1,7 @@
 body {
   background-color: #2f3640;
   color: #f5f6fa;
+  height: 100vh;
 }
 
 .form,
@@ -29,4 +30,17 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 1s ease;
+}
+
+.js-clock {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 50%;
+}
+
+.js-clock h1 {
+  margin: 0;
+  color: #dcdde1;
+  font-size: 130px;
 }
