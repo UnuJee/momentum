@@ -4,13 +4,57 @@ body {
   height: 100vh;
 }
 
+.form-greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
 .form,
 .greetings {
   display: none;
+  margin: 0;
+  width: 400px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  border-width: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: #dcdde1;
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.toDoForm input {
+  border-width: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: #dcdde1;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-size: 30px;
+}
+.form input::placeholder,
+.toDoForm input::placeholder {
+  text-align: center;
+  color: #dcdde1;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.form input:focus,
+.toDoForm input:focus {
+  outline: none;
 }
 
 .showing {
-  display: block;
+  display: flex;
 }
 
 @keyframes fadeIn {
@@ -42,5 +86,25 @@ body {
 .js-clock h1 {
   margin: 0;
   color: #dcdde1;
-  font-size: 700%;
+  font-size: 130px;
+}
+
+.js-weather {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.js-toDoList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.js-toDoList li {
+  margin-bottom: 5px;
+}
+.js-toDoList li button {
+  margin-left: 10px;
 }
